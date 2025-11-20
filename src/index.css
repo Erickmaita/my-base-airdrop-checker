@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Añadimos una fuente moderna como 'Inter' (usada por Base) al body */
+body {
+  font-family: 'Inter', sans-serif;
+}
