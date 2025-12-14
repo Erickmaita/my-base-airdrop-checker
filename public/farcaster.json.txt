@@ -1,0 +1,17 @@
+{
+  "name": "Erick App",
+  "description": "Experience the future of social networking. Connect with friends.",
+  "iconUrl": "https://dist-3bwb17xhx-erickmaita51s-projects.vercel.app/icon.png",
+  "subtitle": "Connect and share instantly",
+  "primaryCategory": "social",
+  "tags": ["social", "messaging", "community"],
+  "tagline": "Grow, Raid & Rise in Stoke Fire",
+  "buttonTitle": "Open mini app",
+  "ogTitle": "Erick App – Local News Fast",
+  "ogDescription": "Get breaking news and updates from your community in real-time",
+  "ogImageUrl": "https://dist-3bwb17xhx-erickmaita51s-projects.vercel.app/og.png",
+  "castShareUrl": "https://warpcast.com/~/compose?text=Check+out+this+app",
+  "homeUrl": "https://dist-3bwb17xhx-erickmaita51s-projects.vercel.app",
+  "webhookUrl": "https://dist-3bwb17xhx-erickmaita51s-projects.vercel.app/api/webhook"
+}
+
