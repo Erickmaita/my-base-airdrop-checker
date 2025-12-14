@@ -4,6 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()], 
+  // CLAVE: Asegura que las rutas estáticas se sirvan correctamente en el despliegue.
+  base: './', 
   // AÑADIDO: Deshabilitar la inyección de CSS para evitar que Tailwind se compile
   // de forma masiva en la memoria al inicio, lo que causa el error "out of memory".
   css: {
