@@ -50,8 +50,10 @@ app.post("/check", async (req, res) => {
 // Iniciar servidor
 // ---------------------------
 const PORT = 3001;
-app.listen(PORT, () => {
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
   console.log(`Servidor backend activo en http://localhost:${PORT}`);
 });
 
 export default app;
+
