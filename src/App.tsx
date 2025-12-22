@@ -3,8 +3,8 @@ import { ConnectKitButton } from 'connectkit';
 import { base } from 'wagmi/chains';
 import React from 'react';
 
-// BACKEND URL
-const BACKEND_URL = "http://localhost:3001/check";
+// --- BACKEND URL CORREGIDO PARA VERCEL ---
+const BACKEND_URL = "/api/check";
 
 // --- COMPONENTE PRINCIPAL ---
 export default function App() {
@@ -30,6 +30,9 @@ export default function App() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ address: addr })
       });
+
+      // Si la respuesta no es ok, lanzamos error para el catch
+      if (!res.ok) throw new Error("Error en servidor");
 
       const data = await res.json();
       setBackendResult(data);
@@ -101,7 +104,7 @@ export default function App() {
         </div>
 
         <p className="mt-8 text-xs text-gray-500 dark:text-gray-400">
-          Verificador no oficial. Backend conectado.
+          Verificador no oficial. Proyecto listo para Paymaster.
         </p>
       </div>
     </div>
