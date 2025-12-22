@@ -26,7 +26,7 @@ const config = createConfig({
     metaMask(),
     injected({ chains, shimDisconnect: true }), 
     // Añadir Connectors adicionales para robustez (ej. WalletConnect, Coinbase)
-    walletConnect({ projectId: 'YOUR_WALLETCONNECT_PROJECT_ID' as any }),
+    walletConnect({ projectId: import.meta.env.VITE_PROJECT_ID as any }),
     coinbaseWallet({ appName: 'Base Nexus App', appIcon: 'https://placehold.co/1200x630/16284a/ffffff' }),
   ],
   transports: {
